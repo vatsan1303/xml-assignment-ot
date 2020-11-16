@@ -1,0 +1,21 @@
+{
+   "number": "1001",
+   "name": "xyz airways",
+   "type": "passenger flight",
+   "seat": [
+      {
+         "@category": "BUSINESS CLASS",
+         "date": "15.11.2020",
+         "departure": "chennai",
+         "destination": "madurai",
+         "availability": "10"
+      },
+      {
+         "@category": "ECONOMY CLASS",
+         "date": "15.11.2020",
+         "departure": "chennai",
+         "destination": "madurai",
+         "availability": "15"
+      }
+   ]
+}

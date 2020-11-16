@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<details>
+    <info id="1">
+        <name>vatsan</name>
+        <age>20</age>
+        <gender>male</gender>
+        <address>xxx</address>
+        <phone>9796857687</phone>
+        <aadhar>xxxx yyyy zzzz</aadhar>
+        <flightdetails>
+            <flightno>1000</flightno>
+            <noofseats>3</noofseats>
+            <category>business</category>
+            <amount>12000</amount>
+            <date>15.11.2020</date>
+        </flightdetails>
+    </info>
+    <info id="2">
+        <name>Abishek</name>
+        <age>20</age>
+        <gender>male</gender>
+        <address>xxx</address>
+        <phone>9796857687</phone>
+        <aadhar>xxxx yyyy zzzz</aadhar>
+        <busdetails>
+            <busno>100</busno>
+            <noofseats>3</noofseats>
+            <category>AC</category>
+            <amount>2400</amount>
+            <date>15.11.2020</date>
+        </busdetails>
+    </info>
+    <info id="3">
+        <name>nmp</name>
+        <age>19</age>
+        <gender>male</gender>
+        <address>xxx</address>
+        <phone>9796857687</phone>
+        <aadhar>xxxx yyyy zzzz</aadhar>
+        <flightdetails>
+            <flightno>1000</flightno>
+            <noofseats>3</noofseats>
+            <category>economy</category>
+            <amount>8000</amount>
+            <date>15.11.2020</date>
+        </flightdetails>
+    </info>
+</details>

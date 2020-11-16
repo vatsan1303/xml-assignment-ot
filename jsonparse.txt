@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head></head>
+    <body>
+        <a href="customer.xml">xml1</a><br>
+        <a href="ticket.xml">xml2</a><br>
+        <a href="customer.txt">DTD1</a><br>
+        <a href="ticket.txt">DTD2</a><br>
+        
+        <a href="customers.json">json1</a><br>
+        <a href="ticket.json">json2</a><br>
+        <a href="customer.xsd">xsd1</a><br>
+        <a href="ticket.xsd">xsd2</a><br>
+        <a href="index.html">DOM</a><br>
+        <a href="indexjson.html">jsonparse</a><br>
+
+        
+
+
+
+
+
+        <a href="customer.xml">xml</a>
+    </body>
+</html>

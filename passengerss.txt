@@ -1,0 +1,7 @@
+{
+"info":[
+	{ "name": "vatsan","age":"20","gender":"male","address":"xxx","phone":"0678557473","aadhar":"xxxx yyyy zzzz"},
+        { "name": "abishek","age":"20","gender":"male","address":"xxx","phone":"0678234473","aadhar":"xxxx yyyy zzzz"},
+	{ "name": "nmp","age":"19","gender":"male","address":"xxx","phone":"0456557473","aadhar":"xxxx yyyy zzzz"},
+	]
+}

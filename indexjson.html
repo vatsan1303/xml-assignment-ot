@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h2>Use the XMLHttpRequest to get the content of a file.</h2>
+<p>The content is written in JSON format, and can easily be converted into a JavaScript object.</p>
+        <table>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Gender</th>
+            <th>Address</th>
+            <th>Phone</th>
+            <th>Aadhar</th>
+        <tr>
+            <td id="name"></td>
+            <td id="age"></td>
+            <td id="gender"></td>
+            <td id="address"></td>
+            <td id="phone"></td>
+            <td id="aadhar"></td>
+
+
+        </tr>
+
+        </table>
+        <p id="first"></p>
+        <script>
+            var a,b = " ";
+            
+            var xhttp = new XMLHttpRequest();
+            xhttp.onreadystatechange = function() {
+            if (this.readyState == 4 && this.status == 200) {
+                var myobj = JSON.parse(this.responseText);
+                for (a in myobj.info){
+                    b+= "<h5>" + myobj.info[a].name+"</h5>";
+                }
+            document.getElementByID("first").innerHTML=b;
+            }
+            };
+            xhttp.open("GET", "customerss.txt", true);
+            xhttp.send();
+        </script>
+        <p>Take a look at <a href="customerss.txt" target="_blank">json_demo.txt</a></p>
+
+
+
+
+    </body>
+</html>

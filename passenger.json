@@ -1,0 +1,50 @@
+[
+   {
+      "@id": "1",
+      "name": "vatsan",
+      "age": "20",
+      "gender": "male",
+      "address": "xxx",
+      "phone": "9796857687",
+      "aadhar": "xxxx yyyy zzzz",
+      "flightdetails": {
+         "flightno": "1000",
+         "noofseats": "3",
+         "category": "business",
+         "amount": "12000",
+         "date": "15.11.2020"
+      }
+   },
+   {
+      "@id": "2",
+      "name": "Abishek",
+      "age": "20",
+      "gender": "male",
+      "address": "xxx",
+      "phone": "9796857687",
+      "aadhar": "xxxx yyyy zzzz",
+      "busdetails": {
+         "busno": "100",
+         "noofseats": "3",
+         "category": "AC",
+         "amount": "2400",
+         "date": "15.11.2020"
+      }
+   },
+   {
+      "@id": "3",
+      "name": "nmp",
+      "age": "19",
+      "gender": "male",
+      "address": "xxx",
+      "phone": "9796857687",
+      "aadhar": "xxxx yyyy zzzz",
+      "flightdetails": {
+         "flightno": "1000",
+         "noofseats": "3",
+         "category": "economy",
+         "amount": "8000",
+         "date": "15.11.2020"
+      }
+   }
+]

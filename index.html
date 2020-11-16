@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<style>
+table,th,td {
+  border : 1px solid black;
+  border-collapse: collapse;
+}
+th,td {
+  padding: 10px;
+}
+body {
+  font-family:"Comic Sans MS", cursive, sans-serif;
+  background-color:#blue ;
+}
+img {
+  border: 10px solid black;
+}
+
+h2{
+  color:red;
+  font-family: "Arial Black", Gadget, sans-serif
+}
+
+h3{
+  color:#C0392B;
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+</style>
+<body>
+<center><h2>online tour passengers XML and DOM</h2></center>
+<h3>ONLINE TOUR OPERATOR!!!</h3>
+
+<button type="button" onclick="loadXMLDoc()">BOOK TICKETS</button>
+<br><br>
+<table id="demo"></table>
+<br>
+<img src="E:\WT\ASSIGNMENT 2\1.jpg" alt="DOM" width="300" height="200">
+
+<script>
+function loadXMLDoc() {
+  var xmlhttp = new XMLHttpRequest();
+  xmlhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+      myFunction(this);
+    }
+  };
+  xmlhttp.open("GET", "passenger.xml", true);
+  xmlhttp.send();
+}
+function myFunction(xml) {
+  var i;
+  var xmlDoc = xml.responseXML;
+  var table="<tr><th>name</th><th>age</th><th>gender</th><th>address</th><th>phone</th><th>aadhar</th></tr>";
+  var x = xmlDoc.getElementsByTagName("info");
+  for (i = 0; i <x.length; i++) {
+    table += "<tr><td>" +
+    x[i].getElementsByTagName("name")[0].childNodes[0].nodeValue +
+    "</td><td>" +
+    x[i].getElementsByTagName("age")[0].childNodes[0].nodeValue +
+    "</td><td>" +
+    x[i].getElementsByTagName("gender")[0].childNodes[0].nodeValue +
+    "</td><td>" +
+    x[i].getElementsByTagName("address")[0].childNodes[0].nodeValue +
+    "</td><td>" +
+    x[i].getElementsByTagName("phone")[0].childNodes[0].nodeValue +
+    "</td><td>" +
+    x[i].getElementsByTagName("aadhar")[0].childNodes[0].nodeValue +
+    "</td></tr>";
+   
+  }
+  document.getElementById("demo").innerHTML = table;
+}
+</script>
+<center><a href="index.html"><button style="background-color:black;color:black;width:10%; height:150px;" ><h2>main page</h2></button></a> <!-- Button link --></center>
+</body>
+</html>

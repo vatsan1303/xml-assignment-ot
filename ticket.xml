@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<flight>
+    <number>1001</number>
+    <name>xyz airways</name>
+    <type>passenger flight</type>
+    <seat category="BUSINESS CLASS">
+        <date>15.11.2020</date>
+        <departure>chennai</departure>
+        <destination>madurai</destination>
+        <availability>10</availability>
+    </seat>
+    <seat category="ECONOMY CLASS">
+        <date>15.11.2020</date>
+        <departure>chennai</departure>
+        <destination>madurai</destination>
+        <availability>15</availability>
+    </seat>
+</flight>
+
+
+

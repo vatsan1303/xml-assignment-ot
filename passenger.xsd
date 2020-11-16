@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+  <xs:element name="details">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" ref="info"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="info">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="name"/>
+        <xs:element ref="age"/>
+        <xs:element ref="gender"/>
+        <xs:element ref="address"/>
+        <xs:element ref="phone"/>
+        <xs:element ref="aadhar"/>
+        <xs:choice>
+          <xs:element ref="busdetails"/>
+          <xs:element ref="flightdetails"/>
+        </xs:choice>
+      </xs:sequence>
+      <xs:attribute name="id" use="required" type="xs:integer"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="name" type="xs:NCName"/>
+  <xs:element name="age" type="xs:integer"/>
+  <xs:element name="gender" type="xs:NCName"/>
+  <xs:element name="address" type="xs:NCName"/>
+  <xs:element name="phone" type="xs:integer"/>
+  <xs:element name="aadhar" type="xs:string"/>
+  <xs:element name="busdetails">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="busno"/>
+        <xs:element ref="noofseats"/>
+        <xs:element ref="category"/>
+        <xs:element ref="amount"/>
+        <xs:element ref="date"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="busno" type="xs:integer"/>
+  <xs:element name="flightdetails">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="flightno"/>
+        <xs:element ref="noofseats"/>
+        <xs:element ref="category"/>
+        <xs:element ref="amount"/>
+        <xs:element ref="date"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="flightno" type="xs:integer"/>
+  <xs:element name="noofseats" type="xs:integer"/>
+  <xs:element name="category" type="xs:NCName"/>
+  <xs:element name="amount" type="xs:integer"/>
+  <xs:element name="date" type="xs:NMTOKEN"/>
+</xs:schema>
